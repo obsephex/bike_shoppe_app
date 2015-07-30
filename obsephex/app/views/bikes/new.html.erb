@@ -1,0 +1,7 @@
+<%= simple_form_for @bike do |form| %>
+ 	<%= form.input :brand, label: "Brand" %>
+ 	<%= form.input :bike_type, label: "Model" %>
+ 	<%= form.input :year, label: "Year" %>
+ 	<%= form.input :description, label: "Description" %>
+ 	<%= form.button :submit %>
+ <% end %>

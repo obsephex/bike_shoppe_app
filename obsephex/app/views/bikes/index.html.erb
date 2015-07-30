@@ -1,0 +1,12 @@
+<h1>Bikes</h1>
+
+<% @bike.each do |bike| %>
+	<div class="bike">
+		<h2><%= bike.brand %></h2>
+		<h2><%= bike.bike_type %></h2>
+		<h2><%= bike.year %></h2>
+		<h2><%= bike.description %></h2>
+	</div>
+
+<p><%= link_to "Add a bike", new_bike_path %></p> 
+<% end %>
